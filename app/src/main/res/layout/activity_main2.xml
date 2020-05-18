@@ -1,102 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Main2Activity">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="110dp"
-        android:layout_height="42dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="359dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="256dp"
-        android:layout_height="32dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="403dp"
-        android:text="TextView" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="227dp"
-        android:layout_marginTop="-126dp"
-        android:onClick="click"
-        android:text="Button" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="72dp"
-        android:ems="10"
-        android:hint="请输入姓名"
-        android:inputType="textPersonName"
-        android:text="" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="358dp"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginBottom="295dp"
-        android:ems="10"
-        android:inputType="phone" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-7dp"
-        android:layout_marginBottom="253dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="367dp"
-        android:layout_marginEnd="304dp"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <cn.edu.upc.ljh.myfirstandorid.MyView
-        android:layout_width="164dp"
-        android:layout_height="63dp" />
-
-</RelativeLayout>
+        android:gravity="center_horizontal"
+        android:text="手势"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

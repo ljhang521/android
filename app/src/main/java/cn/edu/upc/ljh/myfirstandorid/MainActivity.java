@@ -14,15 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
         //创建Fragment
-        ContentFragment contentFragment = new ContentFragment();
-        MenuFragment menuFragment = new MenuFragment();
-        //获取事务
-        beginTransaction = getFragmentManager().beginTransaction();
-        //添加Fragment
-        beginTransaction.replace(R.id.foodcontent, contentFragment);
-        beginTransaction.replace(R.id.menu, menuFragment);
-        //提交事务
-        beginTransaction.commit();
+
     }
 
 
